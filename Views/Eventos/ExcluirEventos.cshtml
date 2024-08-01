@@ -1,0 +1,39 @@
+﻿@model IEnumerable<EventoViewModel>
+
+@{
+    ViewData["Title"] = "Lista de Pacotes";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Titulo</th>
+            <th>Descrição</th>
+            <th>Data</th>
+            <th>Horario</th>
+            <th>Local</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var evento in Model)
+        {
+            <tr>
+                <td>@evento.Id</td>
+                <td>@evento.Titulo</td>
+                <td>@evento.Descricao</td>
+                <td>@evento.Data.ToString("dd/MM/yyyy")</td>
+                <td>@evento.Horario.ToString("HH:mm")</td>
+                <td>@evento.Local</td>
+                <td>
+                    <a asp-action="ConfirmarExclusao" asp-route-id="@evento.Id" class="btn btn-danger">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="PainelUsuario" asp-controller="Home">Voltar</a>

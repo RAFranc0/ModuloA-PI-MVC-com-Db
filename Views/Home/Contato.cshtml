@@ -1,0 +1,44 @@
+﻿@model ContatoViewModel;
+
+<div id="corpo">
+    <div class="container d-flex justify-content-center align-items-center" id="container">
+        <div id="contato-box">
+            <h2 class="text-center mb-4">Contato</h2>
+            <form class="d-flex flex-column justify-content-center align-items-center" asp-action="EnviarContato"
+                method="post" id="formContato">
+                <div class="row mb-4">
+                    <div class="form-group col-4">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Seu nome" asp-for="Nome"
+                            required>
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="telefone">Telefone (Celular ou Fixo)</label>
+                        <input type="tel" class="form-control" id="telefone" placeholder="(xx)xxxxx-xxxx"
+                            asp-for="Telefone" required>
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com"
+                            asp-for="Email" required>
+                    </div>
+                </div>
+                <div class="form-group mb-4 w-75">
+                    <label for="motivoContato">Motivo do Contato</label>
+                    <select class="form-control" id="motivoContato" asp-for="Motivo" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="divulgacao_evento">Divulgação de Evento</option>
+                        <option value="doacoes_financiamentos">Doações e/ou Financiamentos</option>
+                        <option value="informacoes_gerais">Informações Gerais</option>
+                    </select>
+                </div>
+                <div class="form-group mb-4 w-75">
+                    <label for="mensagem">Contato</label>
+                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."
+                        asp-for="Descricao" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>

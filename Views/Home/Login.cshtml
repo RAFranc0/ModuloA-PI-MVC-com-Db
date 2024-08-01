@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "Início";
+}
+
+<div class="container text-center d-flex flex-column justify-content-center align-items-center">
+    <div class="mb-4">
+        <h2>Musica Em Ação</h2>
+        <h5>Login - Menu Usuário</h5>
+    </div>
+    <form asp-controller="Login" asp-action="Login" method="post">
+        <div>
+            <label class="form-label" for="login-input">Login</label>
+            <input class="form-control" type="text" id="login-input" name="Login" required>
+        </div>
+        <div>
+            <label class="form-label" for="senha-input">Senha</label>
+            <input class="form-control" type="password" id="senha-input" name="Senha" required>
+        </div>
+        <div class="mt-2">
+            <button type="button" class="btn btn-secondary" onclick="window.location.href = '/Home/Index'">Voltar</button>
+            <button type="submit" class="btn btn-primary">Log-in</button>
+        </div>
+        <div>
+            <button class="btn btn-danger fs-6 mt-2" id="btnCadastro">Cadastrar novo usuário</button>
+        </div>
+
+    </form>
+</div>

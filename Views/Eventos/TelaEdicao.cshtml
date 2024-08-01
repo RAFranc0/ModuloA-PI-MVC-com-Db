@@ -1,0 +1,43 @@
+@model EventoViewModel
+
+@{
+    ViewData["Title"] = "Editar Pacote";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>Pacote</h4>
+<hr />
+<form asp-action="Editar">
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <label asp-for="Titulo" class="control-label"></label>
+        <input asp-for="Titulo" class="form-control" />
+        <span asp-validation-for="Titulo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Descricao" class="control-label"></label>
+        <textarea asp-for="Descricao" class="form-control"></textarea>
+        <span asp-validation-for="Descricao" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Data" class="control-label"></label>
+        <input asp-for="Data" class="form-control" type="date"/>
+        <span asp-validation-for="Data" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Horario" class="control-label"></label>
+        <input asp-for="Horario" class="form-control" type="datetime" />
+        <span asp-validation-for="Horario" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Local" class="control-label"></label>
+        <input asp-for="Local" class="form-control" />
+        <span asp-validation-for="Local" class="text-danger"></span>
+    </div>
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a asp-action="Listar" class="btn btn-secondary">Cancelar</a>
+    </div>
+</form>
