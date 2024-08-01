@@ -1,4 +1,4 @@
-@model EventoViewModel
+@model ContatoViewModel
 
 @{
     ViewData["Title"] = "Confirmar Exclusão";
@@ -6,10 +6,10 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<h3>Tem certeza de que deseja excluir este pacote?</h3>
+<h3>Tem certeza de que deseja excluir este Contato?</h3>
 
 <div>
-    <h4>Pacote</h4>
+    <h4>Contato</h4>
     <div>
         <dl class="row">
             <dt class="col-sm-2">
@@ -18,35 +18,40 @@
             <dd class="col-sm-10">
                 @Model.Id
             </dd>
+
             <dt class="col-sm-2">
-                Titulo
+                Nome
             </dt>
             <dd class="col-sm-10">
-                @Model.Titulo
+                @Model.Nome
             </dd>
+
             <dt class="col-sm-2">
-                Descricao
+                Telefone
+            </dt>
+            <dd class="col-sm-10">
+                @Model.Telefone
+            </dd>
+
+            <dt class="col-sm-2">
+                E-mail
+            </dt>
+            <dd class="col-sm-10">
+                @Model.Email
+            </dd>
+
+            <dt class="col-sm-2">
+                Motivo
+            </dt>
+            <dd class="col-sm-10">
+                @Model.Motivo
+            </dd>
+
+            <dt class="col-sm-2">
+                Descrição
             </dt>
             <dd class="col-sm-10">
                 @Model.Descricao
-            </dd>
-            <dt class="col-sm-2">
-                Data
-            </dt>
-            <dd class="col-sm-10">
-                @Model.Data.ToString("dd/MM/yyyy")
-            </dd>
-            <dt class="col-sm-2">
-                Horario
-            </dt>
-            <dd class="col-sm-10">
-                @Model.Horario.ToString("HH:mm")
-            </dd>
-            <dt class="col-sm-2">
-                Local
-            </dt>
-            <dd class="col-sm-10">
-                @Model.Local
             </dd>
         </dl>
     </div>

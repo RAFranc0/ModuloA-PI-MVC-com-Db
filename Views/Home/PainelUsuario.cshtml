@@ -2,8 +2,38 @@
     ViewData["Title"] = "Painel do Usuário";
 }
 
+<div class="container d-flex flex-column justify-content-center align-items-center" id="container">
+    <h1 class="mb-4">Painei do Usuário</h1>
 
-<a asp-action="AdicionarEventos" asp-controller="Eventos">Adicionar</a>
-<a asp-action="EditarEventos" asp-controller="Eventos">Editar</a>
-<a asp-action="ExcluirEventos" asp-controller="Eventos">Excluir</a>
-<a asp-action="ListarEventos" asp-controller="Eventos">Listar</a>
+    <div class="text-center mb-4">
+        <h5 class="mb-3">Controle de Eventos</h5>
+        <button class="btn btn-secondary mb-2" id="btnAdicionarEvt">Adicionar Eventos</button>
+        <button class="btn btn-secondary mb-2" id="btnEditarEvt">Editar Eventos</button>
+        <button class="btn btn-secondary mb-2" id="btnExcluirEvt">Excluir Eventos</button>
+        <button class="btn btn-secondary mb-2" id="btnListarEvt">Listar Eventos</button>
+    </div>
+
+    <div class="text-center mb-4">
+        <h5 class="mb-3">Controle de Contatos</h5>
+        <button class="btn btn-info mb-2" id="btnExcluirCtt">Excluir Contatos</button>        
+    </div>
+</div>
+
+<script>
+    document.getElementById("btnAdicionarEvt").addEventListener("click", function(){
+        window.location.href='@Url.Action("AdicionarEventos", "Eventos")';
+    })
+    document.getElementById("btnEditarEvt").addEventListener("click", function(){
+        window.location.href='@Url.Action("EditarEventos", "Eventos")';
+    })
+    document.getElementById("btnExcluirEvt").addEventListener("click", function(){
+        window.location.href='@Url.Action("ExcluirEventos", "Eventos")';
+    })
+    document.getElementById("btnListarEvt").addEventListener("click", function(){
+        window.location.href='@Url.Action("ListarEventos", "Eventos")';
+    })
+
+    document.getElementById("btnExcluirCtt").addEventListener("click", function(){
+        window.location.href='@Url.Action("ExcluirContatos", "Contatos")';
+    })
+</script>

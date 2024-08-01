@@ -1,0 +1,17 @@
+﻿@model ContatoViewModel
+
+<div id="corpo">
+    <div class="container d-flex flex-column justify-content-center align-items-center" id="container">
+
+        <h1>Seu contato foi enviado com sucesso!</h1>
+        <h4 class="fs-6">Entraremos em contato através do telefone ou e-mail disponibilizados.</h4>
+
+        <button class="btn btn-secondary mt-4" id="btnVoltar">Voltar</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("btnVoltar").addEventListener("click", function () {
+        window.location.href = '@Url.Action("PainelUsuario", "Home")';
+    })
+</script>

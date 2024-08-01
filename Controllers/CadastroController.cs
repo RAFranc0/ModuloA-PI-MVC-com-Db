@@ -13,7 +13,7 @@ public class CadastroController : Controller
         _context = context;
     }
 
-        [HttpPost]
+    [HttpPost]
     public IActionResult Create(UsuarioViewModel u)
     {
         if (ModelState.IsValid)

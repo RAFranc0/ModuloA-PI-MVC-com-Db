@@ -3,38 +3,44 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Atv4.Data;
 using Atv4.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace Atv4.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly MADbContext _context;
+
+        public HomeController(MADbContext context)
         {
-            return View();
+            _context = context;
         }
-        public IActionResult Contato()
+
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var Eventos = await _context.Eventos.ToListAsync();
+            return View(Eventos);
         }
+
         public IActionResult Sobre()
         {
             return View();
         }
-        public IActionResult ConfirmacaoEnvio()
-        {
-            return View();
-        }
+
         public IActionResult Login()
         {
             return View();
         }
+
         public IActionResult CadastroUsuario()
         {
             return View();
         }
+
         public IActionResult PainelUsuario()
         {
             return View();

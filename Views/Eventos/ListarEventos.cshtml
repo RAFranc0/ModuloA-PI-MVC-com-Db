@@ -32,4 +32,10 @@
     </tbody>
 </table>
 
-<a asp-action="PainelUsuario" asp-controller="Home">Voltar</a>
+<button class="btn btn-secondary" id="btnVoltar">Voltar</button>
+
+<script>
+    document.getElementById("btnVoltar").addEventListener("click", function(){
+        window.location.href='@Url.Action("PainelUsuario", "Home")';
+    })
+</script>

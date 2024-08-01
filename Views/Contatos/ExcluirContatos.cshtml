@@ -1,4 +1,4 @@
-﻿@model IEnumerable<EventoViewModel>
+﻿@model IEnumerable<ContatoViewModel>
 
 @{
     ViewData["Title"] = "Lista de Pacotes";
@@ -10,26 +10,26 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Titulo</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>Motivo</th>
             <th>Descrição</th>
-            <th>Data</th>
-            <th>Horario</th>
-            <th>Local</th>
             <th>Ações</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var evento in Model)
+        @foreach (var contato in Model)
         {
             <tr>
-                <td>@evento.Id</td>
-                <td>@evento.Titulo</td>
-                <td>@evento.Descricao</td>
-                <td>@evento.Data.ToString("dd/MM/yyyy")</td>
-                <td>@evento.Horario.ToString("HH:mm")</td>
-                <td>@evento.Local</td>
+                <td>@contato.Id</td>
+                <td>@contato.Nome</td>
+                <td>@contato.Telefone</td>
+                <td>@contato.Email</td>
+                <td>@contato.Motivo</td>
+                <td>@contato.Descricao</td>
                 <td>
-                    <a asp-action="ConfirmarExclusao" asp-route-id="@evento.Id" class="btn btn-danger">Excluir</a>
+                    <a asp-action="ConfirmarExclusao" asp-route-id="@contato.Id" class="btn btn-danger">Excluir</a>
                 </td>
             </tr>
         }

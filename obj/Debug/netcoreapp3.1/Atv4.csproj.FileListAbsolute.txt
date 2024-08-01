@@ -48,6 +48,10 @@ C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debu
 C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Atv4.TagHelpers.input.cache
 C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Atv4.TagHelpers.output.cache
 C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Atv4.RazorCoreGenerate.cache
+C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Contatos\ConfirmacaoEnvio.cshtml.g.cs
+C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Contatos\ConfirmarExclusao.cshtml.g.cs
+C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Contatos\Contato.cshtml.g.cs
+C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Contatos\ExcluirContatos.cshtml.g.cs
 C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Eventos\AdicionarEventos.cshtml.g.cs
 C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Eventos\ConfirmarExclusao.cshtml.g.cs
 C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Eventos\EditarEventos.cshtml.g.cs
@@ -55,8 +59,6 @@ C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debu
 C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Eventos\ListarEventos.cshtml.g.cs
 C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Eventos\TelaEdicao.cshtml.g.cs
 C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Home\CadastroUsuario.cshtml.g.cs
-C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Home\ConfirmacaoEnvio.cshtml.g.cs
-C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contato.cshtml.g.cs
 C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
 C:\Users\Raul\Documents\SENAC\Módulo A - Senac\Projeto Integrador\Atv4\obj\Debug\netcoreapp3.1\Razor\Views\Home\PainelUsuario.cshtml.g.cs

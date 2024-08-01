@@ -1,28 +1,30 @@
-﻿<div id="corpo">
+﻿@model IEnumerable<EventoViewModel>
+
+<div id="corpo">
     <div class="container d-flex flex-column justify-content-center align-items-center" id="container">
         <h5 class="text-center">Agenda de eventos:</h5>
         <div id="eventos-box">
-            <div class="card mb-3">
+            @foreach(var evento in Model)
+            {
+                <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="..." class="img-fluid rounded-start" alt="Imagem do evento">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Titulo do Evento</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed
-                                sequi dignissimos labore minus laborum nisi voluptatum omnis natus totam error non
-                                aliquid
-                                suscipit, repudiandae dolorum odio iste ad magni.</p>
-                            <p class="card-text d-flex justify-content-around">
-                                <small class="text-body-secondary">Data:</small>
-                                <small class="text-body-secondary">Horario:</small>
-                                <small class="text-body-secondary">Local:</small>
+                            <h5 class="card-title">@evento.Titulo</h5>
+                            <p class="card-text">@evento.Descricao</p>
+                            <p class="card-text d-flex justify-content-around text-end">
+                                <small class="text-body-secondary">Data: @evento.Data.ToString("dd/MM/yyyy")</small>
+                                <small class="text-body-secondary">Horario: @evento.Horario.ToString("HH:mm")</small>
+                                <small class="text-body-secondary">Local: @evento.Local</small>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+            }
         </div>
     </div>
 </div>

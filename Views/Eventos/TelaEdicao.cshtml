@@ -38,6 +38,13 @@
     <input type="hidden" asp-for="Id" />
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Salvar</button>
-        <a asp-action="Listar" class="btn btn-secondary">Cancelar</a>
+        <button class="btn btn-secondary" id="btnCancelar">Cancelar</button>
     </div>
 </form>
+
+
+<script>
+    document.getElementById("btnCancelar").addEventListener("click", function(){
+        window.location.href='@Url.Action("PainelUsuario", "Home")';
+    })
+</script>
